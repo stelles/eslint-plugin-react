@@ -482,18 +482,18 @@ ruleTester.run('sort-prop-types', rule, {
       line: 4,
       column: 5,
       type: 'Property'
-    }]
-    // output: [
-    //   'var First = createReactClass({',
-    //   '  propTypes: {',
-    //   '    a: PropTypes.any,',
-    //   '    z: PropTypes.string',
-    //   '  },',
-    //   '  render: function() {',
-    //   '    return <div />;',
-    //   '  }',
-    //   '});'
-    // ].join('\n')
+    }],
+    output: [
+      'var First = createReactClass({',
+      '  propTypes: {',
+      '    a: PropTypes.any,',
+      '    z: PropTypes.string',
+      '  },',
+      '  render: function() {',
+      '    return <div />;',
+      '  }',
+      '});'
+    ].join('\n')
   }, {
     code: [
       'var First = createReactClass({',
@@ -513,21 +513,21 @@ ruleTester.run('sort-prop-types', rule, {
       line: 6,
       column: 5,
       type: 'Property'
-    }]
+    }],
     // Disabled test for comments -- fails
-    // output: [
-    //   'var First = createReactClass({',
-    //   '  propTypes: {',
-    //   '    /* a */',
-    //   '    a: PropTypes.any,',
-    //   '    /* z */',
-    //   '    z: PropTypes.string',
-    //   '  },',
-    //   '  render: function() {',
-    //   '    return <div />;',
-    //   '  }',
-    //   '});'
-    // ].join('\n')
+    output: [
+      'var First = createReactClass({',
+      '  propTypes: {',
+      '    /* a */',
+      '    a: PropTypes.any,',
+      '    /* z */',
+      '    z: PropTypes.string',
+      '  },',
+      '  render: function() {',
+      '    return <div />;',
+      '  }',
+      '});'
+    ].join('\n')
   }, {
     code: [
       'var First = createReactClass({',
@@ -545,18 +545,18 @@ ruleTester.run('sort-prop-types', rule, {
       line: 4,
       column: 5,
       type: 'Property'
-    }]
-    // output: [
-    //   'var First = createReactClass({',
-    //   '  propTypes: {',
-    //   '    Z: PropTypes.any,',
-    //   '    z: PropTypes.any',
-    //   '  },',
-    //   '  render: function() {',
-    //   '    return <div />;',
-    //   '  }',
-    //   '});'
-    // ].join('\n')
+    }],
+    output: [
+      'var First = createReactClass({',
+      '  propTypes: {',
+      '    Z: PropTypes.any,',
+      '    z: PropTypes.any',
+      '  },',
+      '  render: function() {',
+      '    return <div />;',
+      '  }',
+      '});'
+    ].join('\n')
   }, {
     code: [
       'var First = createReactClass({',
@@ -577,18 +577,18 @@ ruleTester.run('sort-prop-types', rule, {
       line: 4,
       column: 5,
       type: 'Property'
-    }]
-    // output: [
-    //   'var First = createReactClass({',
-    //   '  propTypes: {',
-    //   '    a: PropTypes.any,',
-    //   '    Z: PropTypes.any',
-    //   '  },',
-    //   '  render: function() {',
-    //   '    return <div />;',
-    //   '  }',
-    //   '});'
-    // ].join('\n')
+    }],
+    output: [
+      'var First = createReactClass({',
+      '  propTypes: {',
+      '    a: PropTypes.any,',
+      '    Z: PropTypes.any',
+      '  },',
+      '  render: function() {',
+      '    return <div />;',
+      '  }',
+      '});'
+    ].join('\n')
   }, {
     code: [
       'var First = createReactClass({',
@@ -603,20 +603,20 @@ ruleTester.run('sort-prop-types', rule, {
       '  }',
       '});'
     ].join('\n'),
-    errors: 2
-    // output: [
-    //   'var First = createReactClass({',
-    //   '  propTypes: {',
-    //   '    A: PropTypes.any,',
-    //   '    Z: PropTypes.string,',
-    //   '    a: PropTypes.any,',
-    //   '    z: PropTypes.string',
-    //   '  },',
-    //   '  render: function() {',
-    //   '    return <div />;',
-    //   '  }',
-    //   '});'
-    // ].join('\n')
+    errors: 2,
+    output: [
+      'var First = createReactClass({',
+      '  propTypes: {',
+      '    A: PropTypes.any,',
+      '    Z: PropTypes.string,',
+      '    a: PropTypes.any,',
+      '    z: PropTypes.string',
+      '  },',
+      '  render: function() {',
+      '    return <div />;',
+      '  }',
+      '});'
+    ].join('\n')
   }, {
     code: [
       'var First = createReactClass({',
@@ -638,27 +638,27 @@ ruleTester.run('sort-prop-types', rule, {
       '  }',
       '});'
     ].join('\n'),
-    errors: 2
-    // output: [
-    //   'var First = createReactClass({',
-    //   '  propTypes: {',
-    //   '    Zz: PropTypes.string,',
-    //   '    a: PropTypes.any',
-    //   '  },',
-    //   '  render: function() {',
-    //   '    return <div />;',
-    //   '  }',
-    //   '});',
-    //   'var Second = createReactClass({',
-    //   '  propTypes: {',
-    //   '    ZZ: PropTypes.string,',
-    //   '    aAA: PropTypes.any',
-    //   '  },',
-    //   '  render: function() {',
-    //   '    return <div />;',
-    //   '  }',
-    //   '});'
-    // ].join('\n')
+    errors: 2,
+    output: [
+      'var First = createReactClass({',
+      '  propTypes: {',
+      '    Zz: PropTypes.string,',
+      '    a: PropTypes.any',
+      '  },',
+      '  render: function() {',
+      '    return <div />;',
+      '  }',
+      '});',
+      'var Second = createReactClass({',
+      '  propTypes: {',
+      '    ZZ: PropTypes.string,',
+      '    aAA: PropTypes.any',
+      '  },',
+      '  render: function() {',
+      '    return <div />;',
+      '  }',
+      '});'
+    ].join('\n')
   }, {
     code: [
       'class First extends React.Component {',
