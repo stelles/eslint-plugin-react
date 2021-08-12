@@ -1695,7 +1695,7 @@ ruleTester.run('sort-prop-types', rule, {
     `,
     parser: 'babel-eslint',
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 7,
       column: 11,
       type: 'Property'
@@ -1733,17 +1733,17 @@ ruleTester.run('sort-prop-types', rule, {
     `,
     parser: 'babel-eslint',
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 7,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 9,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 11,
       column: 11,
       type: 'Property'
@@ -1786,17 +1786,17 @@ ruleTester.run('sort-prop-types', rule, {
     parser: 'babel-eslint',
     settings: {comments: 'below'},
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 6,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 8,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 10,
       column: 11,
       type: 'Property'
@@ -1832,7 +1832,7 @@ ruleTester.run('sort-prop-types', rule, {
     `,
     parser: 'babel-eslint',
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 5,
       column: 11,
       type: 'Property'
@@ -1864,17 +1864,17 @@ ruleTester.run('sort-prop-types', rule, {
     `,
     parser: 'babel-eslint',
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 5,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 6,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 7,
       column: 11,
       type: 'Property'
@@ -1909,17 +1909,17 @@ ruleTester.run('sort-prop-types', rule, {
     parser: 'babel-eslint',
     settings: {commens: 'below'},
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 5,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 6,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 7,
       column: 11,
       type: 'Property'
@@ -1955,17 +1955,17 @@ ruleTester.run('sort-prop-types', rule, {
     `,
     parser: 'babel-eslint',
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 6,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 8,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 9,
       column: 11,
       type: 'Property'
@@ -2003,17 +2003,17 @@ ruleTester.run('sort-prop-types', rule, {
     `,
     parser: 'babel-eslint',
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 6,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 7,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 9,
       column: 11,
       type: 'Property'
@@ -2052,17 +2052,17 @@ ruleTester.run('sort-prop-types', rule, {
     parser: 'babel-eslint',
     settings: {comments: 'below'},
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 6,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 7,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 9,
       column: 11,
       type: 'Property'
@@ -2101,17 +2101,17 @@ ruleTester.run('sort-prop-types', rule, {
     parser: 'babel-eslint',
     settings: {comments: 'below'},
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 5,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 7,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 8,
       column: 11,
       type: 'Property'
@@ -2159,17 +2159,17 @@ ruleTester.run('sort-prop-types', rule, {
     `,
     parser: 'babel-eslint',
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 11,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 15,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 19,
       column: 11,
       type: 'Property'
@@ -2228,17 +2228,17 @@ ruleTester.run('sort-prop-types', rule, {
     parser: 'babel-eslint',
     settings: {comments: 'below'},
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 8,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 12,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 16,
       column: 11,
       type: 'Property'
@@ -2292,17 +2292,17 @@ ruleTester.run('sort-prop-types', rule, {
     `,
     parser: 'babel-eslint',
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 9,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 12,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 15,
       column: 11,
       type: 'Property'
@@ -2353,17 +2353,17 @@ ruleTester.run('sort-prop-types', rule, {
     parser: 'babel-eslint',
     settings: {comments: 'below'},
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 7,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 10,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 13,
       column: 11,
       type: 'Property'
@@ -2413,17 +2413,17 @@ ruleTester.run('sort-prop-types', rule, {
     `,
     parser: 'babel-eslint',
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 9,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 12,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 15,
       column: 11,
       type: 'Property'
@@ -2474,17 +2474,17 @@ ruleTester.run('sort-prop-types', rule, {
     parser: 'babel-eslint',
     settings: {comments: 'below'},
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 7,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 10,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 13,
       column: 11,
       type: 'Property'
@@ -2534,12 +2534,12 @@ ruleTester.run('sort-prop-types', rule, {
       sortShapeProp: true
     }],
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 14,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 16,
       column: 11,
       type: 'Property'
@@ -2588,12 +2588,12 @@ ruleTester.run('sort-prop-types', rule, {
     }],
     settings: {comments: 'below'},
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 13,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 15,
       column: 11,
       type: 'Property'
@@ -2646,27 +2646,27 @@ ruleTester.run('sort-prop-types', rule, {
       sortShapeProp: true
     }],
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 11,
       column: 9,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 13,
       column: 9,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 17,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 19,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 21,
       column: 11,
       type: 'Property'
@@ -2725,27 +2725,27 @@ ruleTester.run('sort-prop-types', rule, {
     }],
     settings: {comments: 'below'},
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 10,
       column: 9,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 12,
       column: 9,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 15,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 17,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 19,
       column: 11,
       type: 'Property'
@@ -2791,7 +2791,7 @@ ruleTester.run('sort-prop-types', rule, {
     `,
     parser: 'babel-eslint',
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 11,
       column: 11,
       type: 'Property'
@@ -2828,7 +2828,7 @@ ruleTester.run('sort-prop-types', rule, {
     parser: 'babel-eslint',
     settings: {comments: 'below'},
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 10,
       column: 11,
       type: 'Property'
@@ -2880,12 +2880,12 @@ ruleTester.run('sort-prop-types', rule, {
       sortShapeProp: true
     }],
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 19,
       column: 11,
       type: 'Property'
     }, {
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 25,
       column: 11,
       type: 'Property'
@@ -2941,7 +2941,7 @@ ruleTester.run('sort-prop-types', rule, {
     }],
     parser: 'babel-eslint',
     errors: [{
-      message: ERROR_MESSAGE,
+      messageId: 'propsNotSorted',
       line: 11,
       column: 11,
       type: 'Property'
@@ -2984,7 +2984,7 @@ ruleTester.run('sort-prop-types', rule, {
       requiredFirst: true
     }],
     errors: [{
-      message: REQUIRED_ERROR_MESSAGE,
+      messageId: 'requiredPropsFirst',
       line: 7,
       column: 11,
       type: 'Property'
